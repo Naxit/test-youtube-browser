@@ -1,0 +1,10 @@
+.video-item {
+  display: flex;
+  /* flex-flow: column nowrap; */
+  align-items: center;
+  cursor: pointer;
+  /* border: 2px solid red; */
+}
+.video-item.item img {
+  max-width: 180px;
+}
