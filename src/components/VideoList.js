@@ -10,12 +10,12 @@ export default function VideoList({ videos, onVideoSelect }) {
       <VideoItem
         key={video.id.videoId}
         video={video}
-        onVideoSelect={(video) => onVideoSelect(video)}
+        onVideoSelect={onVideoSelect}
       />
     );
   });
 
-  return <div className="ui segment">{renderedVideos}</div>;
+  return <div style={{ display: 'flex', flexFlow: 'column nowrap', gap: 8 }}>{renderedVideos}</div>;
 }
 VideoList.propTypes = {
   videos: PropTypes.array,

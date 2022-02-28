@@ -17,7 +17,6 @@ export default function VideoItem({ video, onVideoSelect }) {
           </div>
         </div>
       </div>
-      <hr />
     </>
   );
 }

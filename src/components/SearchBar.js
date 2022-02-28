@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 export default function SearchBar({ onSubmit }) {
-  const [term, setTerm] = useState("rainbows");
-
-  useEffect(() => {
-    onSubmit();
-  }, []);
+  const [term, setTerm] = useState("");
 
   const onFormSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +13,7 @@ export default function SearchBar({ onSubmit }) {
     <div className="search-bar ui segment">
       <form className="ui form" onSubmit={onFormSubmit}>
         <div className="field">
-          <label className="">Video search</label>
+          <label className="">Search for a Youtube video</label>
           <input
             type="text"
             name=""
